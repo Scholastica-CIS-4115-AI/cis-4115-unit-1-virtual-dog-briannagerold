@@ -157,7 +157,8 @@ public class dog {
      */
     private void updateHappy(Actions currentAction) {
         switch (currentAction) {
-            case PET:								//dog is being petted
+            case PET:                                                           //dog is being petted
+                setState(States.SLEEPY);
             case FEED:								//or dog is being fed
                 setState(States.HAPPY); 			//  the dog stays happy
                 break;
